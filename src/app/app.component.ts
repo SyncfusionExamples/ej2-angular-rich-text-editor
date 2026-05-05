@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableService, QuickToolbarService } from '@syncfusion/ej2-angular-richtexteditor';
+import { RichTextEditorModule,ToolbarService, LinkService, ImageService, HtmlEditorService, TableService, QuickToolbarService } from '@syncfusion/ej2-angular-richtexteditor';
 
 
 @Component({
@@ -7,6 +7,8 @@ import { ToolbarService, LinkService, ImageService, HtmlEditorService, TableServ
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   providers: [ToolbarService, LinkService, ImageService, HtmlEditorService,TableService, QuickToolbarService],
+  imports: [RichTextEditorModule],
+  standalone: true,
 })
 export class AppComponent {
   public value: string = `
